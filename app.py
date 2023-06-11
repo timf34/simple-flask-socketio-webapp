@@ -5,6 +5,7 @@ from flask_socketio import SocketIO
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret_key'
 app.logger.setLevel(logging.INFO)
+# TODO: note there's no CORS here; implement this and test in a bit.
 socketio = SocketIO(app, logger=True, engineio_logger=True)
 
 @app.route('/')
