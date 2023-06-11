@@ -31,7 +31,7 @@ def create_app():
     socketio.start_background_task(background_task_example)
     return app
 
-app = create_app()
+application = create_app()
 
 if __name__ == '__main__':
-    socketio.run(app)
+    socketio.run(application)
